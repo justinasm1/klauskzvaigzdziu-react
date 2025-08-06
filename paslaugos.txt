@@ -1,0 +1,35 @@
+import React from 'react';
+
+export default function Services() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-8 text-gray-800">
+      <h1 className="font-serif text-4xl mb-6">Paslaugos</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">Natalinė diagrama</h3>
+          <p className="mb-4">Gimimo žemėlapio analizė, atskleidžianti Jūsų potencialą ir asmenines savybes.</p>
+          <p className="font-semibold mb-4">Kaina: 49€</p>
+          <a href="mailto:justinas@klauskzvaigzdziu.lt" className="underline">žasisakyti</a>
+        </div>
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">Suderinamumo analizė</h3>
+          <p className="mb-4">Partnerių ir santykių suderinamumo tyrimas, padedantis suprasti bendrą dinamiką.</p>
+          <p className="font-semibold mb-4">Kaina: 59€</p>
+          <a href="mailto:justinas@klauskzvaigzdziu.lt" className="underline">žasisakyti</a>
+        </div>
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">Metinė prognozė</h3>
+          <p className="mb-4">Artėjančių metų astrologinė apžvalga, orientuota į asmeninį augimą ir galimybes.</p>
+          <p className="font-semibold mb-4">Kaina: 65€</p>
+          <a href="mailto:justinas@klauskzvaigzdziu.lt" className="underline">žasisakyti</a>
+        </div>
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">Klausimų astrologija</h3>
+          <p className="mb-4">Konkrečių klausimų analizė naudojant horarinę astrologiją.</p>
+          <p className="font-semibold mb-4">Kaina: 35€</p>
+          <a href="mailto:justinas@klauskzvaigzdziu.lt" className="underline">žasisakyti</a>
+        </div>
+      </div>
+    </div>
+  );
+}
