@@ -1,0 +1,26 @@
+import React from 'react';
+
+export default function MoonCalendar() {
+  const days = [
+    { date: '2025-08-02', phase: 'Jaunatis', sign: 'Liūte', interpretation: 'Kūrybos startas ir nauji ketinimai.' },
+    { date: '2025-08-09', phase: 'Pilnatis', sign: 'Žožiaragyje', interpretation: 'Paleidimo momentas ir užbaigimai.' },
+    { date: '2025-08-17', phase: 'Delčia', sign: 'Avine', interpretation: 'Energijos peržiūra ir krypties koregavimas.' },
+    { date: '2025-08-24', phase: 'Priešpilnis', sign: 'Skorpione', interpretation: 'Emocinės transformacijos ir įžvalgos.' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-8 text-gray-800">
+      <h1 className="font-serif text-4xl mb-6">Mėnulio kalendorius – rugpjūtis 2025</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {days.map((day) => (
+          <div key={day.date} className="bg-white/70 p-4 rounded-2xl shadow">
+            <h3 className="font-serif text-xl">{day.date}</h3>
+            <p><strong>Fazė:</strong> {day.phase}</p>
+            <p><strong>Ženklas:</strong> {day.sign}</p>
+            <p><strong>Interpretacija:</strong> {day.interpretation}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
