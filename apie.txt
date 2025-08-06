@@ -1,0 +1,17 @@
+import React from 'react';
+
+export default function About() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-8 text-gray-800">
+      <h1 className="font-serif text-4xl mb-6">Apie mane</h1>
+      <div className="flex flex-col md:flex-row items-start gap-8">
+        <img src="/images/astrologas-avataras.jpg" alt="Astrologas Justinas Mažuika" className="w-64 h-64 object-cover rounded-full shadow-lg" />
+        <div className="prose max-w-none">
+          <p>Esu Justinas Mažuika – astrologas, mokslininkas ir lektorius, sukaupęs daugiau nei dvidešimties metų patirtį. Mano kelionė prasidėjo studijuojant klasikinius metodus, kuriuos papildžiau moderniais psichologiniais požiūriais.</p>
+          <p>Per savo karjerą tyrinėjau, kaip planetų ciklai veikia žmogaus asmeninį augimą, ir dalinausi žiniomis su šimtais studentų ir klientų. Mano darbai yra paremti giliais istoriniais šaltiniais ir atnaujinti šiuolaikinių atradimų.</p>
+          <p>Mano tikslas – padėti žmonėms atrasti savo unikalų kelią per Mėnulio fazes ir žvaigždžių išmintį. Kviečiu Jus į kelionę, kurioje atrasime gyvenimo ritmą, susiderintą su kosmoso pulsavimu.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
