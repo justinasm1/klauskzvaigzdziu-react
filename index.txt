@@ -1,0 +1,49 @@
+https://github.com/justinasm1/klauskzvaigzdziu-react/new/main
+import React from 'react';
+
+export default function Home() {
+  return (
+    <div className="bg-gradient-to-br from-indigo-200 via-purple-200 to-pink-200 min-h-screen text-gray-800">
+      <header className="sticky top-0 backdrop-blur-md bg-white/60 border-b border-white/30 p-4 flex justify-between items-center z-10">
+        <h1 className="font-serif text-2xl">Klausk žvaigždžių</h1>
+        <nav className="space-x-6 font-serif text-lg">
+          <a href="/apie" className="hover:underline">Apie mane</a>
+          <a href="/paslaugos" className="hover:underline">Paslaugos</a>
+          <a href="/straipsniai" className="hover:underline">Straipsniai</a>
+          <a href="/menulio-kalendorius" className="hover:underline">Mėnulio kalendorius</a>
+          <a href="/kontaktai" className="hover:underline">Kontaktai</a>
+        </nav>
+      </header>
+      <main className="p-8">
+        <section className="text-center py-24">
+          <h2 className="font-serif text-5xl mb-4">Paklausk žvaigždžių</h2>
+          <p className="max-w-xl mx-auto mb-8 text-lg">
+            Sveiki! Esu astrologas Justinas Mažuika, kviečiantis patirti žvaigždžių išmintį.
+            Kiekviena konsultacija – tai kelionė į Jūsų vidinį pasaulį,
+            paremta Mėnulio fazėmis ir gimimo žemėlapiais.
+          </p>
+          <a href="/paslaugos" className="inline-block px-8 py-3 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition-colors">
+            Peržiūrėti paslaugas
+          </a>
+        </section>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white/70 p-6 rounded-2xl shadow">
+            <h3 className="font-serif text-2xl mb-2">Apie mane</h3>
+            <p className="mb-4">Sužinokite apie mano kelionę ir kaip tapau astrologu.</p>
+            <a href="/apie" className="underline">Skaityti daugiau</a>
+          </div>
+          <div className="bg-white/70 p-6 rounded-2xl shadow">
+            <h3 className="font-serif text-2xl mb-2">Paslaugos</h3>
+            <p className="mb-4">Natalinės diagramos, suderinamumo analizės ir kita.</p>
+            <a href="/paslaugos" className="underline">Skaityti daugiau</a>
+          </div>
+          <div className="bg-white/70 p-6 rounded-2xl shadow">
+            <h3 className="font-serif text-2xl mb-2">Straipsniai</h3>
+            <p className="mb-4">Gilūs astrologiniai tyrinėjimai ir įžvalgos.</p>
+            <a href="/straipsniai" className="underline">Skaityti daugiau</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
