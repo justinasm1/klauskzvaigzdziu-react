@@ -1,0 +1,26 @@
+import React from 'react';
+
+export default function Articles() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-8 text-gray-800">
+      <h1 className="font-serif text-4xl mb-6">Straipsniai</h1>
+      <div className="space-y-8">
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">Saturno ciklai ir jų įtaka asmeniniam augimui</h3>
+          <p className="mb-4">Giluminė analizė, kaip Saturno grįžimas ir kiti ciklai kečia mūsų gyvenimą ir brandą.</p>
+          <a href="#" className="underline">Skaityti straipsnį</a>
+        </div>
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">Mėnulio fazės: kiekvienos savaitės energetika</h3>
+          <p className="mb-4">Kokios energijos išsiskleidži a per jaunatį, pilnatį ir kitus Mėnulio ciklus.</p>
+          <a href="#" className="underline">Skaityti straipsnį</a>
+        </div>
+        <div className="bg-white/70 p-6 rounded-2xl shadow">
+          <h3 className="font-serif text-2xl mb-2">2025 metų astrologinė apžvalga</h3>
+          <p className="mb-4">Praktinė prognozė, kokie iššūkiai ir galimybės laukia 2025 metais.</p>
+          <a href="#" className="underline">Skaityti straipsnį</a>
+        </div>
+      </div>
+    </div>
+  );
+}
